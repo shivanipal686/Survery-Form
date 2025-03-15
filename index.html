@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <h2 class="head">Survey Form</h2>
+   
+        <form>
+           
+            <div class="body">
+            <!-- Name -->
+             <label for="name">Name:</label>
+             <input type="text" name="nam" id="name" placeholder="Enter name" required>
+            </div>
+
+            <div class="body">
+             <!-- Email -->
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" placeholder="Enter email" required>
+            </div> 
+
+            <div class="body">
+              <!-- Age -->
+               <label for="age">Age:</label>
+               <input type="number" id="age" name="age" placeholder="Enter age" required>
+            </div> 
+
+            <div class="body">
+               <!-- Gender -->
+                <label>Gender:</label><br>
+                <label><input type="radio" name="gen" value="Female">Female</label><br>
+                <label><input type="radio" name="gen" value="Male">Male</label><br>
+                <label><input type="radio" name="gen" value="Other">Other</label><br>
+            </div> 
+            
+            <div class="body">
+                <label>How satisfied are you with our service?</label><br>
+                <label><input type="radio" name="rate" value="1">1(Poor)</label><br>
+                <label><input type="radio" name="rate" value="2">2(Not Bad)</label><br>
+                <label><input type="radio" name="rate" value="3">3(Average)</label><br>
+                <label><input type="radio" name="rate" value="4">4(Good)</label><br>
+                <label><input type="radio" name="rate" value="5">5(Excellent)</label><br>
+            </div> 
+
+            <div class="body">
+                <label>What features do you like the most?</label> <br>
+                <label><input type="checkbox" name="feat" value="UI/UX">UI/UX</label><br>
+                <label><input type="checkbox" name="feat" value="speed">Speed</label><br>
+                <label><input type="checkbox" name="feat" value="support">Support</label><br>
+                <label><input type="checkbox" name="feat" value="security">Security</label><br>
+                <label><input type="checkbox" name="feat" value="other">Other</label><br>
+            </div> 
+
+            <div class="body">
+                <label>Would you recommend our service to others?</label><br>
+                <label><input type="radio" name="recommendation" value="yes" >Yes</label><br>
+                <label><input type="radio" name="recommendation" value="no" >No</label><br>
+            </div>
+
+            <div class="body">
+                <label for="feedback">Your feedback:</label><br>
+                <textarea class="text" name="feedback" id="feedback" placeholder="Give us feedback here" maxlength="1000"></textarea><br>
+            </div>
+
+            <div class="body">
+                <label for="comment">Any other comment?</label><br>
+                <textarea class="text" name="comment" id="comment" placeholder="If any other comment send us here!" maxlength="500"></textarea><br>
+            </div>
+        
+
+       
+            <div>
+                <button type="submit" id="btn">Submit</button><br>
+            </div>
+        
+
+        </form>
+    </div>
+    
+    
+
+        
+    
+</body>
+</html>
